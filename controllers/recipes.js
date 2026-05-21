@@ -3,6 +3,7 @@ const mongodb = require('../db/database');
 const { ObjectId } = require('mongodb');
 
 const getAllRecipes = async (req, res) => {
+     //#swagger.tags = ['Recipes'] 
     try {
         const result = await Recipe.find();
         res.status(200).json(recipes);
@@ -12,6 +13,7 @@ const getAllRecipes = async (req, res) => {
 };
 
 const getSingleRecipe = async (req, res) => {
+     //#swagger.tags = ['Recipes'] 
     try {
         const recipe = await Recipe.findById(req.params.id);
         if (!recipe) return res.status(404).json({ messages: 'Recipe not found' });
@@ -22,6 +24,7 @@ const getSingleRecipe = async (req, res) => {
 };
 
 const createRecipe = async (req, res) => {
+     //#swagger.tags = ['Recipes'] 
     try {
         const recipe = await Recipe.create(req.body);
         res.status(201).json(recipe);
@@ -31,6 +34,7 @@ const createRecipe = async (req, res) => {
 };
 
 const updateRecipe = async (req, res) => {
+     //#swagger.tags = ['Recipes'] 
     try {
         const updatedRecipe = await Recipe.findByIdAndUpdate(req.params.id, req.body, { after: true, runValidators: true });
         if (!updateRecipe) return res.status(404).json({ message: 'Recipe not found' });
@@ -40,6 +44,7 @@ const updateRecipe = async (req, res) => {
 };
 
 const deleteRecipe = async (req, res) => {
+     //#swagger.tags = ['Recipes'] 
   try {
     const deletedRecipe = await Recipe.findByIdAndDelete(req.params.id);
     if (!deletedRecipe) return res.status(404).json({ message: 'Recipe not found' });
