@@ -6,6 +6,11 @@
     "version": "1.0.0"
   },
   "host": "localhost:3000",
+  "servers": [
+    {
+      "url": "http://localhost:3000"
+    }
+  ],
   "basePath": "/",
   "schemes": [
     "http"
@@ -51,6 +56,20 @@
           "Recipes"
         ],
         "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "recipeName": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
         "responses": {
           "201": {
             "description": "Created"
