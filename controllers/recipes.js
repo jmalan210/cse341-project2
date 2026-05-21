@@ -5,7 +5,7 @@ const { ObjectId } = require('mongodb');
 const getAllRecipes = async (req, res) => {
      //#swagger.tags = ['Recipes'] 
     try {
-        const result = await Recipe.find();
+        const recipes = await Recipe.find();
         res.status(200).json(recipes);
     } catch (err) {
         res.status(400).json({ message: err.message });
