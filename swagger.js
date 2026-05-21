@@ -5,11 +5,8 @@ const doc = {
         title: 'W03 Project 2',
         description: 'API documentation for my project'
     },
-    servers: [
-        {
-            url: 'https://cse341-project2-uguq.onrender.com'
-        }
-    ]
+    host: "cse341-project2-uguq.onrender.com/",
+    schemes: ['https'],
 };
 
 const outputFile = './swagger.json';
