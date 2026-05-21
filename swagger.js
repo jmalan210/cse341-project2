@@ -5,7 +5,7 @@ const doc = {
         title: 'W03 Project 2',
         description: 'API documentation for my project'
     },
-    host: "cse341-project2-uguq.onrender.com/",
+    host: "cse341-project2-uguq.onrender.com",
     schemes: ['https'],
 };
 
