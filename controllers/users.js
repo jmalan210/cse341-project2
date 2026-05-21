@@ -1,7 +1,7 @@
 const User = require('../models/User');
-const mongodb = require('../db/database');
-const { ObjectId } = require('mongodb');
-const { get } = require('mongoose');
+// const mongodb = require('../db/database');
+// const { ObjectId } = require('mongodb');
+// const { get } = require('mongoose');
 
 const getAllUsers = async (req, res) => {
     //#swagger.tags = ['Users'] 
