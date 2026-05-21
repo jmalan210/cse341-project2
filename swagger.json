@@ -141,9 +141,48 @@
             "in": "path",
             "required": true,
             "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "recipeName": {
+                  "example": "any"
+                },
+                "ingredients": {
+                  "example": "any"
+                },
+                "instructions": {
+                  "example": "any"
+                },
+                "time": {
+                  "example": "any"
+                },
+                "difficulty": {
+                  "example": "any"
+                },
+                "category": {
+                  "example": "any"
+                },
+                "servings": {
+                  "example": "any"
+                },
+                "favorite": {
+                  "example": "any"
+                },
+                "author": {
+                  "example": "any"
+                }
+              }
+            }
           }
         ],
         "responses": {
+          "201": {
+            "description": "Created"
+          },
           "400": {
             "description": "Bad Request"
           },

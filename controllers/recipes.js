@@ -38,6 +38,7 @@ const createRecipe = async (req, res) => {
             author: req.body.author
         }
         const response = await Recipe.create(recipe);
+        if (!response) return res.status(400).json({ message: 'Recipe unable to be created' });
         res.status(201).json(response);
     } catch (err) {
         res.status(400).json({ message: err.message });
@@ -47,8 +48,20 @@ const createRecipe = async (req, res) => {
 const updateRecipe = async (req, res) => {
      //#swagger.tags = ['Recipes'] 
     try {
-        const updatedRecipe = await Recipe.findByIdAndUpdate(req.params.id, req.body, { after: true, runValidators: true });
-        if (!updateRecipe) return res.status(404).json({ message: 'Recipe not found' });
+        const recipe = {
+            recipeName: req.body.recipeName,
+            ingredients: req.body.ingredients, 
+            instructions: req.body.instructions,
+            time: req.body.time,
+            difficulty: req.body.difficulty,
+            category: req.body.category,
+            servings: req.body.servings,
+            favorite: req.body.favorite,
+            author: req.body.author
+        }
+        const updatedRecipe = await Recipe.findByIdAndUpdate(req.params.id, recipe, { after: true, runValidators: true });
+        if (!updatedRecipe) return res.status(404).json({ message: 'Recipe not found' });
+         res.status(201).json(updatedRecipe);
     } catch (err) {
         res.status(400).json({ message: err.message });
     }
