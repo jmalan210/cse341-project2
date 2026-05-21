@@ -8,6 +8,9 @@ const usersRoutes = require('./routes/users');
 
 app.use(express.json());
 
+const swaggerRoutes = require('./routes/swagger');
+app.use('/api-docs', swaggerRoutes);
+
 const PORT = process.env.PORT || 3000;
 
 app.use((req, res, next) => {
