@@ -1,0 +1,155 @@
+[
+    {
+    "recipeName": "Chocolate Chip Cookies",
+    "ingredients": [
+        "1 cup butter", 
+        "3/4 cup white sugar",
+        "3/4 cup brown sugar",
+        "1 egg",
+        "1 tsp maple extract",
+        "1 tsp baking soda",
+        "2 1/4 cups flour",
+        "2 cups chocolate chips"
+    ], 
+    "instructions": "Cream butter, sugar, eggs, maple extract, and baking soda until light and fluffy. Stir in flour until just incorporated. Stir in chocolate chips. Bake at 350 degrees for 10 minutes",
+    "time": "25 minutes",
+    "difficulty": "Easy",
+    "category": "Desserts",
+    "servings": 48,
+    "favorite": true,
+    "author": "Jennifer Malan" 
+
+},
+
+{
+    "recipeName": "Chicken Noodle Soup",
+    "ingredients": [
+        "1 lb chicken, cooked and shredded", 
+        "1 Tbsp olive oil",
+        "1 onion, chopped",
+        "2-3 large carrots, peeled and sliced",
+        "2 large stalks celery, chopped",
+        "1/2 cup frozen peas",
+        "8 cups chicken broth",
+        "1 tsp chicken bouillon granules",
+        "1 tsp dried thyme",
+        "1/4 tsp pepper",
+        "2 large handfuls old-fashioned egg noodles"
+    ], 
+    "instructions": "Heat oil in a large pot and cook onion, carrot, and celery until onion is translucent. Add broth and seasonings and bring to a simmer. Add noodles and simmer until tender. Stir in chicken and peas",
+    "time": "45 minutes",
+    "difficulty": "Easy",
+    "category": "Soups",
+    "servings": 6,
+    "favorite": true,
+    "author": "Jennifer Malan" 
+
+},
+{
+    "recipeName": "Rice Krispy Treats",
+    "ingredients": [
+        "1/4 cup butter", 
+        "16 oz mini marshmallows",
+        "1 tsp vanilla extract",
+        "~7 cups cereal",
+        "mini MnMs (optional)"
+    ], 
+    "instructions": "Melt butter in a large pot, then stir in marshmallows and stir constantly until melted. Stir in vanilla.  Stir in cereal and lightly press into a greased 9x13 pan. Sprinkle with MnMs if desired",
+    "time": "10 minutes",
+    "difficulty": "Easy",
+    "category": "Desserts",
+    "servings": 24,
+    "favorite": true,
+    "author": "Jennifer Malan" 
+
+},
+{
+    "recipeName": "Spaghetti Sauce",
+    "ingredients": [
+        "2 onions", 
+        "1 red bell pepper",
+        "1 lb carrots, roughly chopped",
+        "16-20 garlic cloves, minced",
+        "8 (28-oz) cans crushed tomatoes",
+        "3 (16-oz) cans tomato sauce",
+        "1/4 cups brown sugar",
+        "3-5 Tbsp salt",
+        "2 tsp pepper",
+        "1/4 cup Italian seasoning",
+        "Red pepper flakes to taste"
+    ], 
+    "instructions": "Combine all and simmer for about 4 hours until reduced by about half. Blend with an immersion blender until smooth. Serve as desired and freeze in smaller quantities for future meals.",
+    "time": "4 hours",
+    "difficulty": "Easy",
+    "category": "Sauces",
+    "servings": 48,
+    "favorite": true,
+    "author": "Jennifer Malan" 
+
+},
+{
+    "recipeName": "Chinese Chicken Salad",
+    "ingredients": [
+        "3 cups chopped, cooked chicken", 
+        "1 head of cabbage, finely shredded",
+        "1 bunch green onion, chopped",
+        "2 1/2 oz slivered almonds",
+        "2 packages ramen noodles, crushed (discard flavor packets",
+        "1 cup oil, divided",
+        "4 1/2 Tbsb seasoned rice wine vinegar",
+        "4 1/2 Tbsp white sugar",
+        "2 tsp salt", 
+        "1 tsp pepper",
+        "1-2 Tbsp soy sauce"
+    ], 
+    "instructions": "Brown noodles and almonds in 3T of the oil and set aside to cool. Combine chicken, cabbage, green onion in a large bowl. In a small bowl combine remaining oil, vinegar, sugar, salt, pepper, and soy sauce.  Pour over chicken and cabbage mixture and toss to cominbe. Just before serving, stir in browned noodles and almonds.",
+    "time": "25 minutes",
+    "difficulty": "Easy",
+    "category": "Salads",
+    "servings": 12,
+    "favorite": false,
+    "author": "Jennifer Malan" 
+
+},
+{
+    "recipeName": "Farmhouse Bread",
+    "ingredients": [
+        "4 cups all-purpose flour", 
+        "1 1/2 Tbsp instant yeast",
+        "2 Tbsp sugar",
+        "2 Tbsp melted butter",
+        "4 cups warm milk",
+        "6 cups bread flour",
+        "1 1/2 Tbsp sea salt"
+    ], 
+    "instructions": "Combine AP flour, yeast, sugar, milk, and oil. Add about 4 cups of bread flour until shaggy. Cover and let rise for 20 min. Add salt and 1 cup of flour until the dough is right. Rise until doubled. Shape into 3 loaves, and rise again. Bake at 375 F for about 35 min.",
+    "time": "3-4 hours",
+    "difficulty": "Expert",
+    "category": "Breads",
+    "servings": 36,
+    "favorite": true,
+    "author": "Jennifer Malan" 
+
+},
+{
+    "recipeName": "Crispy Parmesan Chicken",
+    "ingredients": [
+        "1 1/4 lb raw chicken tenders", 
+        "3 Tbsp flour",
+        "1 1/2 tsp seasoned salt",
+        "1/4 tsp pepper",
+        "2 eggs",
+        "1 1/2 cups panko bread crumbs",
+        "1/2 C grated parmesan cheese",
+        "2 tsp Italian seasoning"
+    ], 
+    "instructions": "Put the flour, seasoning salt, and pepper in one bowl, beat the eggs and put them in the second bowl, and put the panko, italian seasoning, and parmesan in the third bowl. Roll chicken in each and bake for about 20 min on 450.",
+    "difficulty": "Intermediate",
+    "category": "Main Dishes",
+    "servings": 6,
+    "favorite": false,
+    "author": "Jennifer Malan" 
+
+}
+
+]

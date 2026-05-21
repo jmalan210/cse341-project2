@@ -1,0 +1,33 @@
+[
+    {
+        "firstName": "Jennifer",
+        "lastName": "Malan",
+        "email": "jmalan@example.com",
+        "phoneNumber": "123-456-7890",
+        "role": "admin"
+    }, 
+    {
+
+        "firstName": "Amy",
+        "lastName": "Clark",
+        "email": "aclark@example.com",
+        "phoneNumber": "223-456-7890",
+        "role": "user"
+    },
+    {
+        
+        "firstName": "Jack",
+        "lastName": "Monroe",
+        "email": "jmonroe@example.com",
+        "phoneNumber": "323-456-7890",
+        "role": "user"
+    },
+    {
+        
+        "firstName": "Michael",
+        "lastName": "Logan",
+        "email": "mlogan@example.com",
+        "phoneNumber": "423-456-7890",
+        "role": "user"
+    }
+]
