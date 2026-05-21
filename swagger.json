@@ -5,10 +5,15 @@
     "description": "API documentation for my project",
     "version": "1.0.0"
   },
-  "host": "https://cse341-project2-uguq.onrender.com",
-  
+  "host": "localhost:3000",
+  "servers": [
+    {
+      "url": "https://cse341-project2-uguq.onrender.com"
+    }
+  ],
+  "basePath": "/",
   "schemes": [
-    ["https"]
+    "http"
   ],
   "paths": {
     "/": {
