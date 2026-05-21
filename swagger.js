@@ -7,7 +7,7 @@ const doc = {
     },
     servers: [
         {
-            url: 'http://localhost:3000'
+            url: 'https://cse341-project2-uguq.onrender.com'
         }
     ]
 };
