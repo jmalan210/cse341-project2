@@ -8,24 +8,7 @@ router.get('/', recipesController.getAllRecipes);
 /* #swagger.tags = ['Recipes'] */
 router.get('/:id', recipesController.getSingleRecipe);
 
-/* #swagger.tags = ['Recipes']
-   #swagger.description = 'Create a new recipe'
-   #swagger.parameters['body'] = {
-        in: 'body',
-        required: true,
-        schema: {
-            recipeName: 'Pizza',
-            ingredients: ['cheese'],
-            instructions: 'Bake it',
-            time: 30,
-            difficulty: 'easy',
-            category: 'dinner',
-            servings: 2,
-            favorite: false,
-            author: 'John'
-        }
-   }
-*/
+
 router.post('/', recipesController.createRecipe);
 
 /* #swagger.tags = ['Recipes'] */
