@@ -65,6 +65,30 @@
               "properties": {
                 "recipeName": {
                   "example": "any"
+                },
+                "ingredients": {
+                  "example": "any"
+                },
+                "instructions": {
+                  "example": "any"
+                },
+                "time": {
+                  "example": "any"
+                },
+                "difficulty": {
+                  "example": "any"
+                },
+                "category": {
+                  "example": "any"
+                },
+                "servings": {
+                  "example": "any"
+                },
+                "favorite": {
+                  "example": "any"
+                },
+                "author": {
+                  "example": "any"
                 }
               }
             }

@@ -26,9 +26,16 @@ const getSingleRecipe = async (req, res) => {
 const createRecipe = async (req, res) => {
      //#swagger.tags = ['Recipes'] 
     try {
-
         const recipe = {
-            recipeName: req.body.recipeName
+            recipeName: req.body.recipeName,
+            ingredients: req.body.ingredients, 
+            instructions: req.body.instructions,
+            time: req.body.time,
+            difficulty: req.body.difficulty,
+            category: req.body.category,
+            servings: req.body.servings,
+            favorite: req.body.favorite,
+            author: req.body.author
         }
         const response = await Recipe.create(recipe);
         res.status(201).json(response);
