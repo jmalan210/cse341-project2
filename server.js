@@ -52,6 +52,7 @@ passport.use(new GitHubStrategy({
     callbackURL: process.env.CALLBACK_URL
 },
     function (accessToken, refreshToken, profile, done) {
+        console.log("GITHUB PROFILE:", profile)
         return done(null, profile);
     }));
 
