@@ -38,6 +38,14 @@ app
     .use(cors({ origin: '*' }))
     .use('/', require('./routes/index.js'));
 
+    //debugger code
+app.get('/debug', (req, res) => {
+    res.json({
+        user: req.user,
+        session: req.session
+    });
+});
+
 passport.use(new GitHubStrategy({
     clientID: process.env.GITHUB_CLIENT_ID,
     clientSecret: process.env.GITHUB_CLIENT_SECRET,
@@ -54,13 +62,17 @@ passport.deserializeUser((user, done) => {
     done(null, user);
 });
 
-app.get('/', (req, res) => { res.send(req.session.user !== undefined ? `Logged in as ${req.session.user.displayName}` : 'Logged out') });
+app.get('/', (req, res) => {
+    res.send(req.user
+        ? `Logged in as ${req.user.displayName}`
+        : 'Logged out')
+});
 
 app.get('/github/callback', passport.authenticate('github', {
-    failureRedirect: '/api-docs', session: false
+    failureRedirect: '/api-docs'
 }),
     (req, res) => {
-        req.session.user = req.user;
+       
         res.redirect('/');
     });
 

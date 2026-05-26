@@ -5,21 +5,28 @@
     "description": "API documentation for my project",
     "version": "1.0.0"
   },
-  "host": "cse341-project2-uguq.onrender.com",
+  "host": "localhost:3000",
   "basePath": "/",
   "schemes": [
-    "https"
+    "http"
   ],
   "paths": {
+    "/debug": {
+      "get": {
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/": {
       "get": {
         "description": "",
         "responses": {
           "200": {
             "description": "OK"
-          },
-          "default": {
-            "description": ""
           }
         }
       }
@@ -45,6 +52,16 @@
       }
     },
     "/logout": {
+      "get": {
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/api-docs/": {
       "get": {
         "description": "",
         "responses": {
