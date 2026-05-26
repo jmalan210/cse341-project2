@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const recipesController = require('../controllers/recipes');
 const validate = require('../helpers/validateRecipe')
+const { isAuthenticated } = require('../middleware/authenticate');
 
 /* #swagger.tags = ['Recipes'] */
 router.get('/', recipesController.getAllRecipes);
@@ -10,12 +11,12 @@ router.get('/', recipesController.getAllRecipes);
 router.get('/:id', validate.checkId, recipesController.getSingleRecipe);
 
 
-router.post('/', validate.saveRecipe, recipesController.createRecipe);
+router.post('/', isAuthenticated, validate.saveRecipe, recipesController.createRecipe);
 
 /* #swagger.tags = ['Recipes'] */
-router.put('/:id', validate.checkId, validate.updateRecipe, recipesController.updateRecipe);
+router.put('/:id', isAuthenticated, validate.checkId, validate.updateRecipe, recipesController.updateRecipe);
 
 /* #swagger.tags = ['Recipes'] */
-router.delete('/:id', validate.checkId, recipesController.deleteRecipe);
+router.delete('/:id', isAuthenticated, validate.checkId, recipesController.deleteRecipe);
 
 module.exports = router;

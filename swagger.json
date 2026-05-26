@@ -5,7 +5,7 @@
     "description": "API documentation for my project",
     "version": "1.0.0"
   },
-  "host": "cse341-project2-uguq.onrender.com/",
+  "host": "cse341-project2-uguq.onrender.com",
   "basePath": "/",
   "schemes": [
     "https"
@@ -17,11 +17,34 @@
         "responses": {
           "200": {
             "description": "OK"
+          },
+          "default": {
+            "description": ""
           }
         }
       }
     },
-    "/api-docs/": {
+    "/github/callback": {
+      "get": {
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/login": {
+      "get": {
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/logout": {
       "get": {
         "description": "",
         "responses": {
@@ -95,6 +118,9 @@
           },
           "400": {
             "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
           }
         }
       }
@@ -181,6 +207,9 @@
           "400": {
             "description": "Bad Request"
           },
+          "401": {
+            "description": "Unauthorized"
+          },
           "404": {
             "description": "Not Found"
           }
@@ -205,6 +234,9 @@
           },
           "400": {
             "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
           },
           "404": {
             "description": "Not Found"
@@ -264,6 +296,9 @@
           },
           "400": {
             "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
           }
         }
       }
@@ -338,6 +373,9 @@
           "400": {
             "description": "Bad Request"
           },
+          "401": {
+            "description": "Unauthorized"
+          },
           "404": {
             "description": "Not Found"
           }
@@ -362,6 +400,9 @@
           },
           "400": {
             "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
           },
           "404": {
             "description": "Not Found"
